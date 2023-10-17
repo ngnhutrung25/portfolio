@@ -8,34 +8,35 @@ const Avatar = () => {
         pdfCV: "Nguyen Nhu Trung cv.pdf",
     };
     return (
-        <div className="bg-white shadow-lg rounded-xl overflow-hidden">
-            <div
-                className={`h-32 bg-cover bg-center bg-no-repeat bg-[url('/img/${avatar.coverImg}')]`}
-            ></div>
+        <div className="block">
+            <div className="h-24 w-full title"></div>
 
-            <div className="relative pt-14 p-7">
+            <div className="relative content !pt-14">
                 <span className="absolute top-5 right-8 bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">
                     {avatar.status}
                 </span>
-                <div className="absolute -top-[50%] translate-y-[50%] w-28 h-28 rounded-2xl overflow-hidden border-4 border-neutral-200">
+                <div className="absolute -top-[56%] translate-y-[50%] w-28 h-28 rounded-2xl overflow-hidden border-4 border-white/40">
                     <img
                         className="scale-[155%]"
-                        src={"/img/" + avatar.avatarImg}
+                        src={"./img/" + avatar.avatarImg}
                         alt="Avatar"
                     />
                 </div>
-                <div className="text-2xl font-semibold mb-1 mt-4">
-                    {avatar.name}
-                </div>
-                <div className="text-base text-gray-400 mb-7">
-                    {avatar.position}
+
+                <div className="flex flex-col mb-7">
+                    <div className="text-2xl font-semibold text-teal-900">
+                        {avatar.name}
+                    </div>
+                    <div className="text-base text-gray-400 mt-1">
+                        {avatar.position}
+                    </div>
                 </div>
 
                 <div className="flex items-center">
                     <a
                         href={"./pdf/" + avatar.pdfCV}
                         download
-                        className="flex items-center justify-center w-full text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-0 font-medium rounded-xl px-6 py-3"
+                        className="flex items-center justify-center w-full text-white bg-teal-600/80 hover:bg-teal-700/80 focus:outline-none focus:ring-0 font-medium rounded-xl px-6 py-2"
                     >
                         <span className="text-lg">Download CV</span>
                         <svg

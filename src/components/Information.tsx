@@ -8,9 +8,9 @@ const Information = () => {
         linkedin: "https://www.linkedin.com/in/ngnhutrung/",
     };
     return (
-        <div className="p-7 shadow-lg rounded-xl overflow-hidden bg-white">
-            <h2 className="font-semibold text-xl pb-6">Information</h2>
-            <div className="space-y-4">
+        <div className="block">
+            <h2 className="title">Information</h2>
+            <div className="content">
                 <div className="flex justify-between">
                     <div className="text-gray-400">Location</div>
                     <div className="font-medium text-right text-gray-600">
@@ -30,7 +30,7 @@ const Information = () => {
                     </div>
                 </div>
 
-                <div className="flex justify-evenly items-center pt-3 pb-2">
+                <div className="flex justify-evenly items-center pt-3 pb-2 text-teal-600/90">
                     <a
                         className="hover:text-blue-600"
                         href={information.facebook}
