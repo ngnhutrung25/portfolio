@@ -33,6 +33,7 @@ const Information = () => {
                 <div className="flex justify-evenly items-center pt-3 pb-2 text-teal-600/90">
                     <a
                         className="hover:text-blue-600"
+                        target="_blank"
                         href={information.facebook}
                     >
                         <svg
@@ -47,6 +48,7 @@ const Information = () => {
 
                     <a
                         className="hover:text-gray-600"
+                        target="_blank"
                         href={information.github}
                     >
                         <svg
@@ -86,6 +88,7 @@ const Information = () => {
 
                     <a
                         className="hover:text-sky-700"
+                        target="_blank"
                         href={information.linkedin}
                     >
                         <svg

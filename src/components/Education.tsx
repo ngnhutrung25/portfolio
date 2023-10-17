@@ -2,12 +2,15 @@ const Education = () => {
     const education = [
         {
             logo: "logo_ueh.png",
-            school: "Brunel University",
-            major: "Master in Software Engineering",
-            city: "London",
-            time: "September 2017 - May 2019",
-            infomation:
-                "Aut omnis voluptatem sit sequi. Voluptatem temporibus repellat voluptatem voluptatibus enim voluptas necessitatibus. Aut quasi sunt dolor. Commodi dolores saepe asperiores beatae voluptate corporis est ea voluptatem. Enim quo sed et sint aspernatur distinctio qui quam.",
+            school: "UEH University",
+            major: "Software Technology",
+            city: "Ho Chi Minh City",
+            time: "September 2020 - Present",
+            infomation: [
+                "Final-year student - GPA: 8.54/10",
+                "Received scholarships in term 4 and term 5, placing in the top 5% of students",
+                "Relevant Coursework: Algorithms; Database; System Analysis and Design; Object-Oriented Programming; Theme Design; Web Application Development",
+            ],
         },
     ];
     return (
@@ -17,7 +20,7 @@ const Education = () => {
             <div className="content">
                 {education.map((study, index) => (
                     <div key={index} className="mb-6 flex gap-4">
-                        <div className="flex justify-center items-center border border-gray-200 bg-white h-14 w-14 p-1 overflow-hidden rounded-xl">
+                        <div className="flex justify-center items-center border border-gray-200 bg-white h-14 w-14 p-2 overflow-hidden rounded-xl">
                             <img
                                 className="object-contain w-full h-full"
                                 src={"./img/" + study.logo}
@@ -101,7 +104,16 @@ const Education = () => {
                                     </div>
                                 </div>
                             </div>
-                            <p className="text-gray-600">{study.infomation}</p>
+                            <div className="text-gray-600">
+                                {study.infomation.map((info, index) => (
+                                    <span
+                                        key={index}
+                                        className="mt-2 flex gap-4"
+                                    >
+                                        • {info}
+                                    </span>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 ))}

@@ -2,23 +2,16 @@ const Experience = () => {
     const experience = [
         {
             logo: "logo_ueh.png",
-            position: "Senior Developer",
-            company: "Twitter",
-            city: "London",
-            type: "Full time",
-            time: "September 2017 - Present",
-            infomation:
-                "Aut omnis voluptatem sit sequi. Voluptatem temporibus repellat voluptatem voluptatibus enim voluptas necessitatibus. Aut quasi sunt dolor. Commodi dolores saepe asperiores beatae voluptate corporis est ea voluptatem. Enim quo sed et sint aspernatur distinctio qui quam.",
-        },
-        {
-            logo: "logo_ueh.png",
-            position: "Junior Developer",
-            company: "Twitter",
-            city: "London",
-            type: "Full time",
-            time: "September 2017 - Present",
-            infomation:
-                "Aut omnis voluptatem sit sequi. Voluptatem temporibus repellat voluptatem voluptatibus enim voluptas necessitatibus. Aut quasi sunt dolor. Commodi dolores saepe asperiores beatae voluptate corporis est ea voluptatem. Enim quo sed et sint aspernatur distinctio qui quam.",
+            position: ".NET Developer Intern",
+            company: "IT Department of UEH University",
+            city: "Ho Chi Minh City",
+            type: "Part-time",
+            time: "May 2023 - August 2023",
+            information: [
+                "Collaborated with a team on the development of the Internship Management Website for UEH University, serving approximately 5,000 students annually.",
+                "Developed design analysis skills and acquired knowledge in ASP.NET, Blazor and Tailwind.",
+                "Gained practical experience in web development and effective management of large student user database.",
+            ],
         },
     ];
 
@@ -28,7 +21,7 @@ const Experience = () => {
             <div className="content">
                 {experience.map((work, index) => (
                     <div key={index} className="mb-5 flex gap-4">
-                        <div className="flex justify-center items-center border border-gray-200 bg-white h-14 w-14 overflow-hidden p-1 rounded-xl">
+                        <div className="flex justify-center items-center border border-gray-200 bg-white h-14 w-14 overflow-hidden p-2 rounded-xl">
                             <img
                                 className="object-contain w-full h-full"
                                 src={"./img/" + work.logo}
@@ -63,7 +56,8 @@ const Experience = () => {
                                                 {work.company}
                                             </span>
                                         </div>
-                                        <div className="text-gray-500 flex items-center">
+
+                                        {/* <div className="text-gray-500 flex items-center">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 className="h-4 w-4 mr-1"
@@ -87,7 +81,7 @@ const Experience = () => {
                                             <span className="font-medium">
                                                 {work.city}
                                             </span>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
 
@@ -118,7 +112,16 @@ const Experience = () => {
                                     </div>
                                 </div>
                             </div>
-                            <p className="text-gray-600">{work.infomation}</p>
+                            <div className="text-gray-600">
+                                {work.information.map((info, index) => (
+                                    <span
+                                        key={index}
+                                        className="mt-2 flex gap-4"
+                                    >
+                                        • {info}
+                                    </span>
+                                ))}
+                            </div>
 
                             {index !== experience.length - 1 && (
                                 <div className="border-b pt-2 border-gray-200"></div>
