@@ -1,3 +1,5 @@
+import ImageModal from "./ImageModal";
+
 const Projects = () => {
     const projects = [
         {
@@ -11,9 +13,14 @@ const Projects = () => {
                 git: "https://github.com/michino25/mi-blog",
             },
             information: [
-                "A Personal Blog for writing and publishing articles.",
-                "Developed a fully functional blog website with user registration, authentication, blog post management, and a responsive UI.",
-                "Technologies: Node.js, Express, MongoDB, RESTful API, ReactJS, Redux, React-Router, SASS, webpack",
+                "A Personal Blog for writing and publishing articles, where multiple users can log in and contribute content.",
+                "Developed a fully functional blog website with user registration, authentication, and blog post management. Ensured a responsive user interface for seamless user experience.",
+                "Technologies used: Node.js, Express, MongoDB, RESTful API, ReactJS, React-Router, Tailwind, and Vite.",
+            ],
+            image: [
+                { title: "Home page image 1", image: "demo/miblog1.png" },
+                { title: "Home page image 2", image: "demo/miblog2.png" },
+                { title: "Home page image 3", image: "demo/miblog3.png" },
             ],
         },
         {
@@ -29,9 +36,10 @@ const Projects = () => {
 
             information: [
                 "A to-do list application for managing tasks and boosting productivity.",
-                "Created an intuitive to-do list app with task management capabilities, and a user-friendly interface. The app is designed to help users organize their tasks efficiently.",
-                "Technologies: React, React-Router, Redux, SASS, Firebase (for authentication and data storage).",
+                "Developed a to-do list application with task management features and a user-friendly interface, designed to efficiently organize tasks.",
+                "Technologies: React.",
             ],
+            image: [{ title: "App page image", image: "demo/mitask.png" }],
         },
         {
             logo: "hide-scrollbar.png",
@@ -44,9 +52,12 @@ const Projects = () => {
             },
 
             information: [
-                "Quickly toggle the scrollbar's visibility.",
-                "Easily enable or disable the scrollbar via the context menu (right-click).",
+                "Toggle the scrollbar's visibility.",
+                "Easily enable or disable the scrollbar by right-clicking in the context menu.",
                 "Content scripts ensure seamless integration with web pages during loading.",
+            ],
+            image: [
+                { title: "Extension image", image: "demo/hide-scrollbar.png" },
             ],
         },
         {
@@ -61,11 +72,12 @@ const Projects = () => {
             },
 
             information: [
-                "An E-Commerce Website for Agricultural Products.",
-                "Team size: 4 members; Role: Leader/Co-developer.",
+                "E-Commerce Website for Agricultural Products.",
+                "Team Size: 4 members; Role: Leader/Co-developer.",
                 "Technologies: PHP, AJAX, and MVC architecture",
                 "Created a fully functional e-commerce website with user registration, product listings, shopping cart functionality, and Momo payment integration.",
             ],
+            image: [{ title: "Home page image", image: "demo/trifarm.png" }],
         },
     ];
 
@@ -76,7 +88,7 @@ const Projects = () => {
             <div className="content">
                 {projects.map((project, index) => (
                     <div key={index} className="mb-6 flex gap-4">
-                        <div className="flex justify-center items-center border border-gray-200 bg-white h-14 w-14 p-2 overflow-hidden rounded-xl">
+                        <div className="flex justify-center items-center border border-gray-200 bg-white h-14 w-14 p-3 overflow-hidden rounded-xl">
                             <img
                                 className="object-contain w-full h-full"
                                 src={"./img/" + project.logo}
@@ -90,9 +102,9 @@ const Projects = () => {
                                     {project.name}
                                 </div>
 
-                                <div className="justify-between flex flex-col sm:flex-row space-y-2">
-                                    <div className="flex space-x-5">
-                                        <div className="text-gray-500 flex items-center">
+                                <div className="justify-between items-start md:items-center flex flex-col md:flex-row">
+                                    <div className="flex flex-col md:flex-row -m-1">
+                                        <div className="text-gray-500 m-1 flex items-center">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 className="h-4 w-4 mr-1"
@@ -101,9 +113,9 @@ const Projects = () => {
                                                 stroke="currentColor"
                                             >
                                                 <path
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    stroke-width="2"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth="2"
                                                     d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
                                                 ></path>
                                             </svg>
@@ -111,7 +123,7 @@ const Projects = () => {
                                                 {project.type}
                                             </span>
                                         </div>
-                                        <div className="text-gray-500 flex items-center">
+                                        <div className="text-gray-500 m-1 flex items-center">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 className="h-4 w-4 mr-1"
@@ -120,9 +132,9 @@ const Projects = () => {
                                                 stroke="currentColor"
                                             >
                                                 <path
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    stroke-width="2"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth="2"
                                                     d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
                                                 ></path>
                                             </svg>
@@ -131,7 +143,7 @@ const Projects = () => {
                                             </span>
                                         </div>
                                     </div>
-                                    <div className="text-gray-500 flex items-center">
+                                    <div className="text-gray-500 flex items-center mt-2 md:mt-0">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             className="h-4 w-4 mr-1"
@@ -140,9 +152,9 @@ const Projects = () => {
                                             stroke="currentColor"
                                         >
                                             <path
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                stroke-width="2"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth="2"
                                                 d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                                             ></path>
                                         </svg>
@@ -163,7 +175,7 @@ const Projects = () => {
                                 ))}
                             </div>
 
-                            <div className="">
+                            <div className="flex w-full relative flex-wrap">
                                 {project.linkProduct.demo && (
                                     <a
                                         href={project.linkProduct.demo}
@@ -210,6 +222,16 @@ const Projects = () => {
                                         <span>Git Repository</span>
                                     </a>
                                 )}
+                                <div className="flex flex-wrap">
+                                    {project.image.map((pic, index) => (
+                                        <div key={index} className="">
+                                            <ImageModal
+                                                title={pic.title}
+                                                image={pic.image}
+                                            />
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
 
                             {index !== projects.length - 1 && (
