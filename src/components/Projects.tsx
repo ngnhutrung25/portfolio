@@ -15,7 +15,7 @@ const Projects = () => {
             information: [
                 "A Personal Blog for writing and publishing articles, where multiple users can log in and contribute content.",
                 "Developed a fully functional blog website with user registration, authentication, and blog post management. Ensured a responsive user interface for seamless user experience.",
-                "Technologies used: Node.js, Express, MongoDB, RESTful API, ReactJS, React-Router, Tailwind, and Vite.",
+                "Technologies: Node.js, Express, MongoDB, RESTful API, ReactJS, React-Router, Tailwind, and Vite.",
             ],
             image: [
                 { title: "Home page image 1", image: "demo/miblog1.png" },
