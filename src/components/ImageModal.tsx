@@ -55,11 +55,11 @@ const ImageModal = ({ title, image }: Props) => {
             </button>
 
             {show && (
-                <div className="absolute flex justify-center items-center -left-8 right-8 bottom-[80%] z-50 p-4">
+                <div className="absolute flex justify-center items-center -left-20 -right-4 md:-left-8 md:right-8 bottom-[80%] z-50 p-4">
                     {/* <!-- Modal content --> */}
                     <div className="relative rounded-xl shadow-xl backdrop-blur backdrop-brightness-90">
                         {/* <!-- Modal body --> */}
-                        <div className="p-6 h-96 flex items-center justify-center bg-white/60 rounded-b-xl">
+                        <div className="p-3 sm:p-6 h-96 flex items-center justify-center bg-white/60 rounded-b-xl">
                             <img
                                 className="w-full h-full object-contain rounded-lg"
                                 src={"./img/" + image}

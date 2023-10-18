@@ -34,7 +34,7 @@ const Education = () => {
                                     {study.major}
                                 </div>
 
-                                <div className="justify-between flex flex-col sm:flex-row space-y-2">
+                                <div className="justify-between flex flex-col flex-wrap sm:flex-row space-y-2">
                                     <div className="flex flex-col sm:flex-row sm:space-x-5">
                                         <div className="text-gray-500 flex items-center">
                                             <svg
