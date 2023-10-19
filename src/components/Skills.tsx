@@ -4,6 +4,7 @@ const Skills = () => {
             title: "Frameworks",
             content: [
                 "ReactJS",
+                "Redux",
                 "NodeJS",
                 "Tailwind",
                 "Bootstrap",
