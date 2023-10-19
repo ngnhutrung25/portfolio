@@ -1,7 +1,7 @@
 const Skills = () => {
     const skills = [
         {
-            title: "Frameworks",
+            title: "Technologies",
             content: [
                 "ReactJS",
                 "Redux",
