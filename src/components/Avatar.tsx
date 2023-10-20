@@ -5,7 +5,7 @@ const Avatar = () => {
         status: "Open to Work",
         name: "Nguyễn Như Trung",
         position: "Frontend Developer",
-        pdfCV: "Nguyen Nhu Trung cv.pdf",
+        pdfCV: "[Frontend ReactJS Developer] Nguyen Nhu Trung.pdf",
     };
     return (
         <div className="block">

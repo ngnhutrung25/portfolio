@@ -15,7 +15,7 @@ const Projects = () => {
             information: [
                 "A Personal Blog for writing and publishing articles, where multiple users can log in and contribute content.",
                 "Developed a fully functional blog website with user registration, authentication, and blog post management. Ensured a responsive user interface for seamless user experience.",
-                "Technologies: Node.js, Express, MongoDB, RESTful API, JWT, ReactJS, React-Router, Tailwind, and Vite.",
+                "Technologies: TypeScript, Node.js, Express, MongoDB, RESTful API, JWT, ReactJS, React-Router, Tailwind, and Vite.",
             ],
             image: [
                 { title: "Home page image 1", image: "demo/miblog1.png" },
@@ -37,7 +37,7 @@ const Projects = () => {
             information: [
                 "A to-do list application for managing tasks and boosting productivity.",
                 "Developed a to-do list application with task management features and a user-friendly interface, designed to efficiently organize tasks.",
-                "Technologies: React, Redux, Tailwind.",
+                "Technologies: TypeScript, React, Redux, Tailwind.",
             ],
             image: [{ title: "App page image", image: "demo/mitask.png" }],
         },
