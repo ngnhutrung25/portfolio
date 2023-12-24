@@ -1,6 +1,32 @@
 const Experience = () => {
   const experience = [
     {
+      logo: "estuary_logo.png",
+      position: "Frontend Developer Fresher",
+      company: "Estuary JSC",
+      city: "Ho Chi Minh City",
+      type: "Full-time",
+      time: "November 2023 - Present",
+      information: [
+        {
+          title: "",
+          content:
+            "Acquired proficiency in Ant Design and React Query, essential technologies utilized by the company, through comprehensive reading of guides and documents.",
+        },
+        {
+          title: "",
+          content:
+            "Gained insights into the company's operations, ensuring a solid understanding of the workflow, and consistently reported progress on a daily and weekly basis.",
+        },
+        {
+          title: "",
+          content:
+            "Got better at working with the team, communicating, and adapting to new things.",
+        },
+      ],
+      image: [],
+    },
+    {
       logo: "logo_ueh.png",
       position: ".NET Developer Intern",
       company: "IT Department of UEH University",
@@ -106,7 +132,9 @@ const Experience = () => {
               <div className="text-gray-600">
                 {work.information.map((info, index) => (
                   <div key={index} className="mt-2">
-                    <span className="font-medium mr-1">• {info.title}:</span>
+                    <span className="font-medium mr-1">
+                      • {info.title ? info.title + ":" : ""}
+                    </span>
                     <span>{info.content}</span>
                   </div>
                 ))}

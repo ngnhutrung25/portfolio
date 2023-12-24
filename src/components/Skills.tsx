@@ -36,7 +36,7 @@ const Skills = () => {
     },
     {
       title: "Foreign Language",
-      content: ["Intermediate", "TOEIC: 625"],
+      content: ["Intermediate", "TOEIC: 700+"],
     },
   ];
   return (
