@@ -7,7 +7,7 @@ const Education = () => {
             city: "Ho Chi Minh City",
             time: "September 2020 - Present",
             infomation: [
-                "Final-year student - GPA: 8.54/10",
+                "Final-year student - GPA: 8.65/10",
                 "Received scholarships in term 4 and term 5, placing in the top 5% of students",
                 "Relevant Coursework: Algorithms; Database; System Analysis and Design; Object-Oriented Programming; Theme Design; Web Application Development",
             ],
