@@ -54,6 +54,9 @@ const Avatar = () => {
           </a>
         </div>
       </div>
+      <div className="hidden">
+        <img src={"./img/avt-trung.jpg"} />
+      </div>
     </div>
   );
 };
