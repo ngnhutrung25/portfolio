@@ -1,0 +1,30 @@
+{
+  "info": [
+    "Trang web quản lý thực tập tốt nghiệp là một trang quản lý quá trình thực tập và trao đổi giữa giảng viên và sinh viên",
+    "Trang web này là một đồ án tốt nghiệp của sinh viên Nguyễn Như Trung và Trần Hoài Phương"
+  ],
+  "author": [
+    {
+      "name": "Nguyễn Như Trung",
+      "facebook": "https://www.facebook.com/ng.nhutrung/",
+      "github": "https://github.com/michino25/",
+      "linkedin": "https://www.linkedin.com/in/ngnhutrung/",
+      "avatar": "https://michino25.github.io/online-cv/img/avatar.jpg",
+      "info": [
+        "I am a final-year Software Engineering student with a strong passion for technology and innovation. My educational journey has provided me with a solid foundation in software development, and I have gained hands-on experience with various web projects.",
+        "As an active team member, I often take on leadership roles and demonstrate strong problem-solving abilities. Currently, I am actively seeking internships or entry-level positions to apply my skills."
+      ]
+    },
+    {
+      "name": "Trần Hoài Phương",
+      "facebook": "https://www.facebook.com/ng.nhutrung/",
+      "github": "https://github.com/michino25/",
+      "linkedin": "https://www.linkedin.com/in/ngnhutrung/",
+      "avatar": "https://michino25.github.io/online-cv/img/avatar.jpg",
+      "info": [
+        "I am a final-year Software Engineering student with a strong passion for technology and innovation. My educational journey has provided me with a solid foundation in software development, and I have gained hands-on experience with various web projects.",
+        "As an active team member, I often take on leadership roles and demonstrate strong problem-solving abilities. Currently, I am actively seeking internships or entry-level positions to apply my skills."
+      ]
+    }
+  ]
+}
