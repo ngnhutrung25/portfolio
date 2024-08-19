@@ -26,8 +26,8 @@ export default function App() {
             {/* Right Side */}
             <div className="space-y-5 lg:col-span-2">
               <AboutMe />
-              <Projects />
               <Experience />
+              <Projects />
               <Education />
             </div>
           </div>

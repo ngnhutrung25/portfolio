@@ -2,7 +2,7 @@ const Experience = () => {
   const experience = [
     {
       logo: "estuary_logo.png",
-      position: "Frontend Developer Fresher",
+      position: "Frontend Developer",
       company: "Estuary JSC",
       city: "Ho Chi Minh City",
       type: "Full-time",
@@ -24,43 +24,7 @@ const Experience = () => {
             "Got better at working with the team, communicating, and adapting to new things.",
         },
       ],
-      image: [],
-    },
-    {
-      logo: "logo_ueh.png",
-      position: ".NET Developer Intern",
-      company: "IT Department of UEH University",
-      city: "Ho Chi Minh City",
-      type: "Part-time",
-      time: "May 2023 - August 2023",
-      information: [
-        { title: "Project", content: "UEH Intern" },
-        {
-          title: "Project Description",
-          content:
-            "A platform for the management of internship processes and graduation theses.",
-        },
-        { title: "Team Size", content: "2" },
-        {
-          title: "Responsibilities",
-          content:
-            "Collaborated with UEH teachers and teammates to gather project requirements, developed the frameworks and modules of the system, and took primary responsibility for the frontend.",
-        },
-        {
-          title: "Accomplishments",
-          content:
-            "Acquired practical experience in managing a large student user database, serving approximately 5,000 graduate students annually. Gained proficiency in Microsoft technologies and frameworks, including Blazor. Enhanced teamwork and communication skills.",
-        },
-        {
-          title: "Technologies",
-          content:
-            "Front-end: Blazor, Tailwind; Back-end: ASP.NET 6.0, Entity Framework",
-        },
-      ],
-      image: [
-        { title: "Home page image", image: "demo/homepage.png" },
-        { title: "Student page image", image: "demo/student.png" },
-      ],
+      image: [] as { title: string; image: string }[],
     },
   ];
 
@@ -145,30 +109,31 @@ const Experience = () => {
               )}
 
               <div className="flex w-full relative flex-wrap">
-                {work.image.map((pic, index) => (
-                  <a
-                    href={"img/" + pic.image}
-                    key={index}
-                    target="_blank"
-                    className="inline-flex items-center m-1 space-x-3 px-4 py-2 rounded-xl group border text-base font-medium transition duration-200 border-teal-600/80 bg-white/50 text-teal-500 hover:text-white hover:bg-teal-600/80"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-4 w-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
+                {work.image.length > 0 &&
+                  work.image.map((pic, index) => (
+                    <a
+                      href={"img/" + pic.image}
+                      key={index}
+                      target="_blank"
+                      className="inline-flex items-center m-1 space-x-3 px-4 py-2 rounded-xl group border text-base font-medium transition duration-200 border-teal-600/80 bg-white/50 text-teal-500 hover:text-white hover:bg-teal-600/80"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
-                      ></path>
-                    </svg>
-                    <span>{pic.title}</span>
-                  </a>
-                ))}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-4 w-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+                        ></path>
+                      </svg>
+                      <span>{pic.title}</span>
+                    </a>
+                  ))}
               </div>
             </div>
           </div>

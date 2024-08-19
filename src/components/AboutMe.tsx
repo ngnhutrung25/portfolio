@@ -1,7 +1,7 @@
 const AboutMe = () => {
   const aboutMe = [
-    "I am a final-year Software Engineering student with a strong passion for technology and innovation. My educational journey has provided me with a solid foundation in software development, and I have gained hands-on experience with various web projects, utilizing technologies such as PHP, .NET, ReactJS, React Native, and Node.js. Additionally, I frequently work in a frontend role and possess some design skills.",
-    "As an active team member, I often take on leadership roles and demonstrate strong problem-solving abilities. Currently, I am actively seeking internships or entry-level positions to apply my skills, make a significant impact, and continue my learning journey. I look forward to connecting, networking, and exploring new opportunities.",
+    "I'm a recent Software Technology graduate with a strong passion for turning ideas into impactful applications. My journey has equipped me with solid expertise in both front-end and back-end development, with hands-on experience in React, .NET, Node.js, and more. I've led projects like the UEH Internship platform, improving processes for over 10,000 students and enhancing user experiences through smart design and efficient code.",
+    "In every project, I bring leadership, problem-solving, and a drive for excellence. I'm now seeking opportunities where I can apply my skills, contribute to innovative projects, and keep pushing the boundaries of technology. Let's connect and create something amazing together!",
   ];
 
   return (

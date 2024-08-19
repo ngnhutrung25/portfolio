@@ -1,6 +1,25 @@
 const Projects = () => {
   const projects = [
     {
+      logo: "logo_ueh.png",
+      name: "UEH Internship - Graduation Project",
+      type: "E-commerce",
+      role: "Co-creator/Developer",
+      time: "May 2023 - Present",
+      linkProduct: {},
+      information: [
+        "A platform for the management of internship processes and graduation theses.",
+        "Team Size: 2",
+        "Collaborated with UEH teachers and teammates to gather project requirements, developed the frameworks and modules of the system, and took primary responsibility for the frontend.",
+        "Acquired practical experience in managing a large student user database, serving approximately 10,000 graduate students annually. Enhanced teamwork and communication skills.",
+        "Technologies: Front-end: React, Vite SSR, Tailwind; Back-end: ASP.NET 6.0, Entity Framework, SQL Server",
+      ],
+      image: [
+        { title: "Home page image", image: "demo/homepage.png" },
+        { title: "Student page image", image: "demo/student.png" },
+      ],
+    },
+    {
       logo: "trifarm.png",
       name: "miFarm App - Personal Project",
       type: "E-commerce",
