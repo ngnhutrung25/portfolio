@@ -1,15 +1,18 @@
 const AboutMe = () => {
   const aboutMe = [
-    "I'm a recent Software Technology graduate with a strong passion for turning ideas into impactful applications. My journey has equipped me with solid expertise in both front-end and back-end development, with hands-on experience in React, .NET, Node.js, and more. I've led projects like the UEH Internship platform, improving processes for over 10,000 students and enhancing user experiences through smart design and efficient code.",
-    "In every project, I bring leadership, problem-solving, and a drive for excellence. I'm now seeking opportunities where I can apply my skills, contribute to innovative projects, and keep pushing the boundaries of technology. Let's connect and create something amazing together!",
+    "I am Nguyen Nhu Trung, a Software Engineering graduate from the University of Economics Ho Chi Minh City (UEH), with a passion for technology and innovation. With a strong foundation in both frontend and backend development, I specialize in building dynamic web and mobile applications that are user-centered and scalable. My expertise includes working with technologies such as .NET, React.js, Node.js, and React Native, allowing me to create end-to-end digital solutions that solve real-world problems.",
+    "I thrive in collaborative environments and often take on leadership roles, bringing strong communication, problem-solving, and project management skills to the table. Whether working in a team or leading projects, I am always focused on delivering high-quality code and seamless user experiences.",
+    "Currently, I am seeking full-time opportunities to apply my skills and contribute to impactful projects while continuing to grow in the tech industry. I am especially interested in roles where I can use my knowledge to build innovative products, optimize user experiences, and drive digital transformation.",
+    "Feel free to connect with me to discuss potential opportunities, projects, or to simply share ideas!",
   ];
 
   return (
     <div className="block">
       <h2 className="title">About me</h2>
       <div className="content text-gray-700">
-        <p className="">{aboutMe[0]}</p>
-        <p className="">{aboutMe[1]}</p>
+        {aboutMe.map((i) => (
+          <p className="">{i}</p>
+        ))}
       </div>
     </div>
   );

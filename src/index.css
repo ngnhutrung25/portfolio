@@ -14,6 +14,14 @@
   @apply space-y-4 p-7 bg-white/80 backdrop-blur-sm;
 }
 
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
 /* scrollbar style */
 ::-webkit-scrollbar {
   width: 8px;

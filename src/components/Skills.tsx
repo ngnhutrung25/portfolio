@@ -1,25 +1,19 @@
 const Skills = () => {
   const skills = [
     {
-      title: "Technologies (Javascript)",
+      title: "Language, framework and library",
       content: [
         "TypeScript",
+        "NodeJS",
         "ReactJS",
         "React Native",
         "Redux",
-        "Redux Thunk",
-        "NodeJS",
-      ],
-    },
-    {
-      title: "Technologies (Other)",
-      content: [
         "Tailwind",
         "Bootstrap",
+        "Ant Design",
+        "PHP",
         "ASP.NET MVC",
         "ASP WebAPI",
-        "Blazor",
-        "PHP",
       ],
     },
     {
@@ -28,7 +22,7 @@ const Skills = () => {
     },
     {
       title: "Version Control",
-      content: ["Git (GitHub)"],
+      content: ["Git"],
     },
     {
       title: "Design",
@@ -36,7 +30,7 @@ const Skills = () => {
     },
     {
       title: "Foreign Language",
-      content: ["Intermediate", "TOEIC: 600+"],
+      content: ["Intermediate", "TOEIC 625"],
     },
   ];
   return (
@@ -46,7 +40,7 @@ const Skills = () => {
         {skills.map((item, index) => (
           <div key={index} className="flex flex-col py-2 -m-1">
             <div className="pb-4">
-              <span className="bg-teal-100 text-teal-800 text-lg font-medium px-3 py-1.5 rounded-xl">
+              <span className="bg-teal-100/30 text-teal-800 font-medium px-3 py-1.5 rounded-xl">
                 {item.title}
               </span>
             </div>
@@ -54,7 +48,7 @@ const Skills = () => {
               {item.content.map((item, index) => (
                 <span
                   key={index}
-                  className="text-gray-900 bg-white border border-gray-300 hover:bg-gray-100 font-medium rounded-full text-base px-5 py-1.5"
+                  className="text-gray-600 bg-white/70 border border-gray-300/50 hover:bg-gray-100 rounded-xl text-base px-3 py-1"
                 >
                   {item}
                 </span>
