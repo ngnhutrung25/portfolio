@@ -20,7 +20,7 @@ const experience = [
     company: "Estuary JSC",
     city: "Ho Chi Minh City",
     type: "Full-time",
-    time: "September 2023 - August 2024",
+    time: "August 2023 - September 2024",
     information: [
       "Acquired proficiency in Ant Design and React Query, essential technologies utilized by the company, through comprehensive reading of guides and documents.",
       "Gained insights into the company's operations, ensuring a solid understanding of the workflow, and consistently reported progress on a daily and weekly basis.",
