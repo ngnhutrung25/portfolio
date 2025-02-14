@@ -19,11 +19,12 @@ const Information = () => {
         <InfoRow title="Phone" content={information.phone} />
         <InfoRow title="Email" content={information.email} />
 
-        <div className="flex justify-evenly items-center pt-3 pb-2 text-teal-600/90">
+        <div className="flex justify-evenly items-center pt-3 pb-2 text-blue-600/90">
           <a
             className="hover:text-blue-600"
             target="_blank"
             href={information.facebook}
+            aria-label="facebook"
           >
             <FacebookIcon />
           </a>
@@ -32,6 +33,7 @@ const Information = () => {
             className="hover:text-gray-600"
             target="_blank"
             href={information.github}
+            aria-label="github"
           >
             <GithubIcon />
           </a>
@@ -40,6 +42,7 @@ const Information = () => {
             className="hover:text-sky-700"
             target="_blank"
             href={information.linkedin}
+            aria-label="linkedin"
           >
             <LinkedInIcon />
           </a>
@@ -54,7 +57,7 @@ export default Information;
 const InfoRow = ({ title, content }: { title: string; content: string }) => {
   return (
     <div className="flex justify-between">
-      <div className="text-gray-400">{title}</div>
+      <div className="text-gray-600">{title}</div>
       <div className="font-medium text-right text-gray-600">{content}</div>
     </div>
   );

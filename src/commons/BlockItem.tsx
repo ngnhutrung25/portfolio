@@ -60,7 +60,7 @@ const BlockItem = ({
 
             {tag && (
               <div>
-                <span className="bg-teal-100 text-teal-700 border border-teal-300 text-sm font-medium px-3 py-1 rounded-full">
+                <span className="bg-blue-50 text-blue-700 border border-blue-300 text-sm font-medium px-3 py-1 rounded-full">
                   {tag}
                 </span>
               </div>
@@ -68,8 +68,8 @@ const BlockItem = ({
           </div>
 
           <div className="flex-between flex-wrap gap-2">
-            {subTitle.map((i) => (
-              <div className="text-gray-500 flex items-start">
+            {subTitle.map((i, idx) => (
+              <div key={idx} className="text-gray-600 flex items-start">
                 <div className="h-[24px] flex-center">
                   {subTitleType[i.type]}
                 </div>
@@ -92,8 +92,13 @@ const BlockItem = ({
         {/* extra */}
         {meta && meta.length > 0 && (
           <div className="flex w-full flex-wrap">
-            {meta.map((i) => (
-              <LinkButton title={i.title} link={i.link} image={i.image} />
+            {meta.map((i, idx) => (
+              <LinkButton
+                key={idx}
+                title={i.title}
+                link={i.link}
+                image={i.image}
+              />
             ))}
           </div>
         )}

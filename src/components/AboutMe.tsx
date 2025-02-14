@@ -10,8 +10,10 @@ const AboutMe = () => {
     <div className="block">
       <h2 className="title">About me</h2>
       <div className="content text-gray-700">
-        {aboutMe.map((i) => (
-          <p className="">{i}</p>
+        {aboutMe.map((i, idx) => (
+          <p key={idx} className="">
+            {i}
+          </p>
         ))}
       </div>
     </div>

@@ -3,7 +3,7 @@ import BlockItem from "../commons/BlockItem";
 const Education = () => {
   const education = [
     {
-      logo: "ueh-logo.png",
+      logo: "ueh-logo.webp",
       school: "UEH University",
       major: "Software Technology",
       city: "Ho Chi Minh City",
@@ -22,6 +22,7 @@ const Education = () => {
       <div className="content">
         {education.map((edu, index) => (
           <BlockItem
+            key={index}
             title={edu.major}
             logo={edu.logo}
             content={edu.information}

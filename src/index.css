@@ -7,7 +7,7 @@
 }
 
 .title {
-  @apply font-semibold text-xl text-teal-900 bg-white/30 backdrop-blur px-7 py-3;
+  @apply font-semibold text-xl text-blue-900 bg-white/60 backdrop-blur px-7 py-3;
 }
 
 .content {
@@ -29,14 +29,13 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #4cadb8;
+  @apply bg-blue-300;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #3e8891;
-  border-radius: 4px;
+  @apply bg-blue-600 rounded-full;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #20515a;
+  @apply bg-blue-400;
 }

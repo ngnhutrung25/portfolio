@@ -2,7 +2,7 @@ import BlockItem from "../commons/BlockItem";
 
 const experience = [
   {
-    logo: "acb-logo.png",
+    logo: "acb-logo.webp",
     position: "Frontend Developer",
     company: "Asia Commercial Joint Stock Bank",
     city: "Ho Chi Minh City",
@@ -15,7 +15,7 @@ const experience = [
     meta: [],
   },
   {
-    logo: "estuary-logo.png",
+    logo: "estuary-logo.webp",
     position: "Frontend Developer",
     company: "Estuary JSC",
     city: "Ho Chi Minh City",
@@ -29,7 +29,7 @@ const experience = [
     meta: [],
   },
   {
-    logo: "ueh-logo.png",
+    logo: "ueh-logo.webp",
     position: "Software Developer",
     company: "UEH University",
     city: "Ho Chi Minh City",
@@ -41,7 +41,7 @@ const experience = [
     meta: [],
   },
   {
-    logo: "ueh-logo.png",
+    logo: "ueh-logo.webp",
     position: "Frontend Developer",
     company: "UEH University",
     city: "Ho Chi Minh City",
@@ -65,6 +65,7 @@ const Experience = () => {
       <div className="content">
         {experience.map((work, index) => (
           <BlockItem
+            key={index}
             title={work.position}
             logo={work.logo}
             tag={work.type}

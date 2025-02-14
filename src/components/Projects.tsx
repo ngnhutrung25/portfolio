@@ -3,7 +3,7 @@ import BlockItem from "../commons/BlockItem";
 const Projects = () => {
   const projects = [
     {
-      logo: "chime-logo.png",
+      logo: "chime-logo.webp",
       name: "Chime Extension - Personal Project",
       type: "Chrome Extension",
       role: "Creator/Developer",
@@ -15,10 +15,10 @@ const Projects = () => {
       information: [
         "Provides time-based notifications with sound alerts, designed to remind users to take regular breaks, stay hydrated, and manage their time effectively.",
       ],
-      image: [{ title: "Extension image", image: "demo/chime.png" }],
+      image: [{ title: "Extension image", image: "demo/chime.webp" }],
     },
     {
-      logo: "trifarm.png",
+      logo: "trifarm.webp",
       name: "miFarm App - Personal Project",
       type: "E-commerce",
       role: "Creator/Developer",
@@ -34,7 +34,7 @@ const Projects = () => {
       image: [{ title: "Demo Video", image: "demo/mifarm.gif" }],
     },
     {
-      logo: "trifarm.png",
+      logo: "trifarm.webp",
       name: "miFarm MERN - Personal Project",
       type: "E-commerce",
       role: "Creator/Developer",
@@ -49,12 +49,12 @@ const Projects = () => {
         "Technologies: TypeScript, Node.js, Express, MongoDB, RESTful API, Axios, ReactJS, React-Router, Tailwind, Redux, Redux Thunk.",
       ],
       image: [
-        { title: "Home page image", image: "demo/mifarm1.png" },
-        { title: "Cart page image", image: "demo/mifarm2.png" },
+        { title: "Home page image", image: "demo/mifarm1.webp" },
+        { title: "Cart page image", image: "demo/mifarm2.webp" },
       ],
     },
     {
-      logo: "mitask.png",
+      logo: "mitask.webp",
       name: "miTask - Personal Project",
       type: "Tool",
       role: "Creator/Developer",
@@ -69,10 +69,10 @@ const Projects = () => {
         "Developed a to-do list application with task management features and a user-friendly interface, designed to efficiently organize tasks.",
         "Technologies: TypeScript, React, Redux, Tailwind.",
       ],
-      image: [{ title: "App page image", image: "demo/mitask.png" }],
+      image: [{ title: "App page image", image: "demo/mitask.webp" }],
     },
     {
-      logo: "hide-scrollbar.png",
+      logo: "hide-scrollbar.webp",
       name: "Hide Scrollbar Extension - Personal Project",
       type: "Chrome Extension",
       role: "Creator/Developer",
@@ -86,10 +86,10 @@ const Projects = () => {
         "Easily enable or disable the scrollbar by right-clicking in the context menu.",
         "Content scripts ensure seamless integration with web pages during loading.",
       ],
-      image: [{ title: "Extension image", image: "demo/hide-scrollbar.png" }],
+      image: [{ title: "Extension image", image: "demo/hide-scrollbar.webp" }],
     },
     {
-      logo: "trifarm.png",
+      logo: "trifarm.webp",
       name: "TriFarm - Final Course Project",
       type: "E-commerce",
       role: "Leader/Co-developer",
@@ -105,7 +105,7 @@ const Projects = () => {
         "Technologies: PHP, AJAX, MVC architecture, Bootstrap",
         "Created a fully functional e-commerce website with user registration, product listings, shopping cart functionality, and Momo payment integration.",
       ],
-      image: [{ title: "Home page image", image: "demo/trifarm.png" }],
+      image: [{ title: "Home page image", image: "demo/trifarm.webp" }],
     },
   ];
 
@@ -116,6 +116,7 @@ const Projects = () => {
       <div className="content">
         {projects.map((project, index) => (
           <BlockItem
+            key={index}
             title={project.name}
             logo={project.logo}
             content={project.information}

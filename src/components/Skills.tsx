@@ -40,7 +40,7 @@ const Skills = () => {
         {skills.map((item, index) => (
           <div key={index} className="flex flex-col py-2 -m-1">
             <div className="pb-4">
-              <span className="bg-teal-100/30 text-teal-800 font-medium px-3 py-1.5 rounded-xl">
+              <span className="bg-blue-50/30 text-blue-800 font-medium px-3 py-1.5 rounded-xl">
                 {item.title}
               </span>
             </div>
