@@ -1,11 +1,11 @@
-const AboutMe = () => {
-  const aboutMe = [
-    "I am Nguyen Nhu Trung, a Software Engineering graduate from the University of Economics Ho Chi Minh City (UEH), with a passion for technology and innovation. With a strong foundation in both frontend and backend development, I specialize in building dynamic web and mobile applications that are user-centered and scalable. My expertise includes working with technologies such as .NET, React.js, Node.js, and React Native, allowing me to create end-to-end digital solutions that solve real-world problems.",
-    "I thrive in collaborative environments and often take on leadership roles, bringing strong communication, problem-solving, and project management skills to the table. Whether working in a team or leading projects, I am always focused on delivering high-quality code and seamless user experiences.",
-    "Currently, I am seeking full-time opportunities to apply my skills and contribute to impactful projects while continuing to grow in the tech industry. I am especially interested in roles where I can use my knowledge to build innovative products, optimize user experiences, and drive digital transformation.",
-    "Feel free to connect with me to discuss potential opportunities, projects, or to simply share ideas!",
-  ];
+const aboutMe = [
+  "I am Nguyen Nhu Trung, a Software Engineering graduate from the University of Economics Ho Chi Minh City (UEH). As a Frontend Developer, I am driven by a passion for creating impactful, user-centric applications with a focus on innovation. My expertise spans across both frontend and backend development, and I specialize in building scalable and high-performance applications using technologies such as React, React Native, Node.js, and .NET.",
+  "I am currently working at Asia Commercial Bank (ACB), where I contribute to the development and optimization of the bank's mobile applications and internal data management systems. This experience has allowed me to deepen my knowledge of the finance and banking industry, especially around ensuring compliance with industry regulations and security standards.",
+  "I excel in cross-functional collaboration, leading projects, and delivering high-quality solutions that improve business efficiency and user experience. I am passionate about continuous learning and thrive in environments that challenge me to grow while building innovative products that solve real-world problems.",
+  "Feel free to connect with me to discuss potential opportunities, projects, or to simply share ideas!",
+];
 
+const AboutMe = () => {
   return (
     <div className="block">
       <h2 className="title">About me</h2>

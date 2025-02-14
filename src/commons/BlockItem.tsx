@@ -60,7 +60,7 @@ const BlockItem = ({
 
             {tag && (
               <div>
-                <span className="bg-blue-50 text-blue-700 border border-blue-300 text-sm font-medium px-3 py-1 rounded-full">
+                <span className="bg-teal-50 text-teal-700 border border-teal-300 text-sm font-medium px-3 py-1 rounded-full">
                   {tag}
                 </span>
               </div>

@@ -19,9 +19,9 @@ const Information = () => {
         <InfoRow title="Phone" content={information.phone} />
         <InfoRow title="Email" content={information.email} />
 
-        <div className="flex justify-evenly items-center pt-3 pb-2 text-blue-600/90">
+        <div className="flex justify-evenly items-center pt-3 pb-2 text-teal-600/90">
           <a
-            className="hover:text-blue-600"
+            className="hover:text-teal-600"
             target="_blank"
             href={information.facebook}
             aria-label="facebook"

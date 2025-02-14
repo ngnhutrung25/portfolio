@@ -1,38 +1,43 @@
+const skills = [
+  {
+    title: "Frontend Development",
+    content: [
+      "JavaScript",
+      "TypeScript",
+      "ReactJS",
+      "React Native",
+      "Next.js",
+      "Redux",
+      "Zustand",
+    ],
+  },
+  {
+    title: "UI/UX Tools",
+    content: ["Tailwind", "Ant Design", "Bootstrap"],
+  },
+  {
+    title: "Design",
+    content: ["Figma", "Canva"],
+  },
+  {
+    title: "Backend Development",
+    content: ["Node.js", "Express", "ASP.NET", "RESTful API"],
+  },
+  {
+    title: "Databases",
+    content: ["SQL Server", "MySQL", "MongoDB"],
+  },
+  {
+    title: "Version Control",
+    content: ["Git", "GitHub", "GitLab"],
+  },
+  {
+    title: "Foreign Language",
+    content: ["Intermediate", "TOEIC 625"],
+  },
+];
+
 const Skills = () => {
-  const skills = [
-    {
-      title: "Language, framework and library",
-      content: [
-        "TypeScript",
-        "NodeJS",
-        "ReactJS",
-        "React Native",
-        "Redux",
-        "Tailwind",
-        "Bootstrap",
-        "Ant Design",
-        "PHP",
-        "ASP.NET MVC",
-        "ASP WebAPI",
-      ],
-    },
-    {
-      title: "Databases",
-      content: ["SQL Server", "MySQL", "MongoDB"],
-    },
-    {
-      title: "Version Control",
-      content: ["Git"],
-    },
-    {
-      title: "Design",
-      content: ["Figma", "Canva", "Photoshop"],
-    },
-    {
-      title: "Foreign Language",
-      content: ["Intermediate", "TOEIC 625"],
-    },
-  ];
   return (
     <div className="block">
       <h2 className="title">Skills</h2>
@@ -40,7 +45,7 @@ const Skills = () => {
         {skills.map((item, index) => (
           <div key={index} className="flex flex-col py-2 -m-1">
             <div className="pb-4">
-              <span className="bg-blue-50/30 text-blue-800 font-medium px-3 py-1.5 rounded-xl">
+              <span className="bg-teal-50 text-teal-800 font-medium px-3 py-1.5 rounded-xl">
                 {item.title}
               </span>
             </div>

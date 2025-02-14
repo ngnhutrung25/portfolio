@@ -7,11 +7,11 @@
 }
 
 .title {
-  @apply font-semibold text-xl text-blue-900 bg-white/60 backdrop-blur px-7 py-3;
+  @apply font-semibold text-xl text-teal-900 bg-white/50 px-7 py-3;
 }
 
 .content {
-  @apply space-y-4 p-7 bg-white/80 backdrop-blur-sm;
+  @apply space-y-4 p-7 bg-white/80;
 }
 
 .flex-center {
@@ -29,13 +29,13 @@
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-blue-300;
+  @apply bg-teal-600/70;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-blue-600 rounded-full;
+  @apply bg-teal-900/30 rounded-full;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-blue-400;
+  @apply bg-teal-900/60;
 }
