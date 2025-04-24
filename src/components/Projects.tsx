@@ -9,7 +9,7 @@ const projects = [
     time: "February 2025",
     linkProduct: {
       demo: "https://apipocket.vercel.app/",
-      git: "https://github.com/michino25/api-pocket",
+      git: "https://github.com/ngnhutrung25/api-pocket",
     },
 
     information: [
@@ -28,7 +28,7 @@ const projects = [
     role: "Creator/Developer",
     time: "November 2024",
     linkProduct: {
-      git: "https://github.com/michino25/chime-extension",
+      git: "https://github.com/ngnhutrung25/chime-extension",
     },
 
     information: [
@@ -43,7 +43,7 @@ const projects = [
     role: "Creator/Developer",
     time: "October 2023",
     linkProduct: {
-      git: "https://github.com/michino25/mi-farm-rn",
+      git: "https://github.com/ngnhutrung25/mi-farm-rn",
     },
     information: [
       "An ecommerce mobile app dedicated to the sale of fresh vegetables and agricultural products.",
@@ -60,7 +60,7 @@ const projects = [
     time: "July 2023",
     linkProduct: {
       demo: "https://mi-farm.vercel.app/",
-      git: "https://github.com/michino25/mi-farm-mern",
+      git: "https://github.com/ngnhutrung25/mi-farm-mern",
     },
     information: [
       "A web-based ecommerce platform dedicated to the sale of fresh vegetables and agricultural products.",
@@ -80,7 +80,7 @@ const projects = [
     time: "June 2023",
     linkProduct: {
       demo: "https://mitask-to-do-list-app.vercel.app/",
-      git: "https://github.com/michino25/mitask-to-do-list-app",
+      git: "https://github.com/ngnhutrung25/mitask-to-do-list-app",
     },
 
     information: [
@@ -97,7 +97,7 @@ const projects = [
     role: "Creator/Developer",
     time: "March 2023",
     linkProduct: {
-      git: "https://github.com/michino25/hide-scrollbar-extension",
+      git: "https://github.com/ngnhutrung25/hide-scrollbar-extension",
     },
 
     information: [
@@ -115,7 +115,7 @@ const projects = [
     time: "September 2022 - November 2022",
     linkProduct: {
       demo: "https://trifarm.epizy.com",
-      git: "https://github.com/michino25/trifarm_website",
+      git: "https://github.com/ngnhutrung25/trifarm_website",
     },
 
     information: [

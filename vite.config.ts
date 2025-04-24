@@ -3,6 +3,6 @@ import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: "/online-cv/",
-    plugins: [react()],
+  base: "/portfolio/",
+  plugins: [react()],
 });

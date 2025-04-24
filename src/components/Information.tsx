@@ -8,7 +8,7 @@ const Information = () => {
     phone: "0393976845",
     email: "ngnhutrung25@gmail.com",
     facebook: "https://www.facebook.com/ng.nhutrung/",
-    github: "https://github.com/michino25/",
+    github: "https://github.com/ngnhutrung25/",
     linkedin: "https://www.linkedin.com/in/ngnhutrung/",
   };
   return (
